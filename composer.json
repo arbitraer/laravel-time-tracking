@@ -1,19 +1,27 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "arbitraer/laravel-time-tracking",
+    "description": "A package to start and stop a timer and persist the intervals to the database.",
+    "homepage": "https://github.com/arbitraer/laravel-time-tracking",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "arbitraer",
+        "arbiträr",
+        "laravel-time-tracking"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
-    "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Lars Krause",
+            "email": "lars@arbitraer.de",
+            "homepage": "https://arbitraer.de",
+            "role": "Developer"
+        },
+        {
+            "name": "Per Steinhorst",
+            "email": "per@arbitraer.de",
+            "homepage": "https://arbitraer.de",
             "role": "Developer"
         }
     ],
+    "license": "MIT",
     "require": {
         "php": "^8.0",
         "spatie/laravel-package-tools": "^1.4.3",
@@ -22,18 +30,17 @@
     "require-dev": {
         "orchestra/testbench": "^6.13",
         "phpunit/phpunit": "^9.3",
-        "spatie/laravel-ray": "^1.9",
         "vimeo/psalm": "^4.4"
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Arbitraer\\TimeTracker\\": "src",
+            "Arbitraer\\TimeTracker\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Arbitraer\\TimeTracker\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Arbitraer\\TimeTracker\\TimeTrackerServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "TimeTracker": "Arbitraer\\TimeTracker\\TimeTrackerFacade"
             }
         }
     },

@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Arbitraer\TimeTracking\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class TimeTrackingCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-time-tracking';
 
     public $description = 'My command';
 

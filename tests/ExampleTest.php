@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace Arbitraer\TimeTracking\Tests;
 
 class ExampleTest extends TestCase
 {
