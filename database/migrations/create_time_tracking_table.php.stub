@@ -19,10 +19,22 @@ class CreateTimeTrackingTable extends Migration
         Schema::create($tableNames['intervals'], function (Blueprint $table) {
 
             $table->bigIncrements('id');
-            $table->dateTimeTz('started_at', $precision = 0);
-            $table->dateTimeTz('stopped_at', $precision = 0);
+            $table->morphs('intervalable');
+            $table->timestamp('started_at');
+            $table->timestamp('stopped_at')->nullable();
 
             $table->timestamps();
         });
+    }
+
+    public function down()
+    {
+        $tableNames = config('time-tracking.table_names');
+
+        if (empty($tableNames)) {
+            throw new \Exception('Error: config/time-tracking.php not found and defaults could not be merged. Please publish the package configuration before proceeding, or drop the tables manually.');
+        }
+
+        Schema::drop($tableNames['intervals']);
     }
 }
