@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Arbitraer\\TimeTracker\\": "src",
-            "Arbitraer\\TimeTracker\\Database\\Factories\\": "database/factories"
+            "Arbitraer\\TimeTracking\\": "src",
+            "Arbitraer\\TimeTracking\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Arbitraer\\TimeTracker\\Tests\\": "tests"
+            "Arbitraer\\TimeTracking\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Arbitraer\\TimeTracker\\TimeTrackerServiceProvider"
+                "Arbitraer\\TimeTracking\\TimeTrackingServiceProvider"
             ],
             "aliases": {
-                "TimeTracker": "Arbitraer\\TimeTracker\\TimeTrackerFacade"
+                "TimeTracking": "Arbitraer\\TimeTracking\\TimeTrackingFacade"
             }
         }
     },

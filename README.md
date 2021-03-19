@@ -28,8 +28,8 @@ php artisan vendor:publish --provider="Arbitraer\TimeTracking\TimeTrackingServic
 ## Usage
 
 ```php
-$laravel-time-tracking = new Arbitraer\TimeTracking();
-echo $laravel-time-tracking->echoPhrase('Hello, Arbitraer!');
+use Arbitraer/TimeTracking;
+$interval = new TimeTracking();
 ```
 
 ## Testing
