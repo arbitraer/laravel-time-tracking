@@ -7,7 +7,6 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 
 class Interval extends Model
 {
-
     protected $guarded = ['id'];
 
     protected static function boot()
