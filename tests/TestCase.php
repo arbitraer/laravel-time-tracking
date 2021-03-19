@@ -2,9 +2,9 @@
 
 namespace Arbitraer\TimeTracking\Tests;
 
+use Arbitraer\TimeTracking\TimeTrackingServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Arbitraer\TimeTracking\TimeTrackingServiceProvider;
 
 class TestCase extends Orchestra
 {
