@@ -2,9 +2,9 @@
 
 namespace Arbitraer\TimeTracking;
 
+use Arbitraer\TimeTracking\Commands\TimeTrackingCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Arbitraer\TimeTracking\Commands\TimeTrackingCommand;
 
 class TimeTrackingServiceProvider extends PackageServiceProvider
 {
