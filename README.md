@@ -1,4 +1,6 @@
-# A package to start and stop a timer and persist the intervals to the database.
+# A package to start and stop a timer.
+
+This package allows you to start & stop a timer and persist the intervals to the database on a model in Laravel.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/arbitraer/laravel-time-tracking.svg?style=flat-square)](https://packagist.org/packages/arbitraer/laravel-time-tracking)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/arbitraer/laravel-time-tracking/run-tests?label=tests)](https://github.com/arbitraer/laravel-time-tracking/actions?query=workflow%3ATests+branch%3Amaster)
@@ -21,6 +23,7 @@ php artisan migrate
 ```
 
 You can publish the config file with:
+
 ```bash
 php artisan vendor:publish --provider="Arbitraer\TimeTracking\TimeTrackingServiceProvider" --tag="time-tracking-config"
 ```
